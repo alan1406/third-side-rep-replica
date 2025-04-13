@@ -7,9 +7,12 @@ export async function middleware(request) {
     // 1. The "sec-ch-ua-platform" header does not exist
     // 2. The User-Agent does not contain "curl"
     if (!platformHeader) {
-        return new NextResponse("Important asset another.html", {
-            status: 406,
-        });
+        return new NextResponse(
+            "keep the url instead of reimplementing it yourself",
+            {
+                status: 406,
+            }
+        );
     }
 
     // Fetch the requested URL
