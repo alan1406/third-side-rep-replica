@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 
 export async function middleware(request) {
+    const userAgent = request.headers.get("user-agent") || "";
     const platformHeader = request.headers.get("sec-ch-ua-platform");
 
     // Return a 406 Not Acceptable if:
