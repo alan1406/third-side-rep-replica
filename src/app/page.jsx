@@ -163,7 +163,7 @@ function MainComponent() {
                     {/* Use the file provided from the public assets folder instead of creating a new one*/}
                     <iframe
                         id="essential-important-asset"
-                        rc="/assets/another.html"
+                        src="/assets/another.html"
                         // src="https://static.databutton.com/public/e17cccf4-8736-4b4b-8e76-11969d8a0ce5/another.html"
                         data-feature="Improve-visibility-and-accessibility"
                         width="400"
